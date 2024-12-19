@@ -1,4 +1,4 @@
-import Image from "next/image";
+//import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,15 +19,18 @@ export default function Home() {
       </header>
 
       <section id='welcome' className="min-h-screen bg-gray-800 text-white flex items-center justify-center border-gray-700 border-b-4 p-4">
-        <div>
-          <h1 className="text-4xl font-bold">Welcome to my portfolio.</h1>
+        <div className="p-24">
+          <h1 className="text-4xl font-extrabold">Welcome to my portfolio.</h1>
           <p className="text-lg text-left mt-4">
           Hi, my name is Kevin Tran. I graduated from Stanford University in 2022 in Electrical Engineering
-          with a Computer Engineering specialization. I enjoy solving problems and building impactful software applications.  Currently, I am at Amazon Lab126, 
-          where I have been for the past two years.
+          with a Computer Engineering specialization. I solve problems and build impactful software applications.  Currently, I am at Amazon Lab126, 
+          where I have been for the past two years. In my spare time, I love basketball, cooking new dishes, climbing, tennis, pickleball, and bluffing my roommates in poker.
+          I never say to no to a good challenge!
           </p>
         </div>
-        
+        <div className="p-10">
+          <img src="/cartoon_kevin.png" alt="kevin-cartoon" className="w-full rounded" />
+        </div>
       </section>
 
       <section id='projects' className="min-h-screen bg-gray-800 border-gray-700 border-b-4 p-4">
@@ -38,7 +41,7 @@ export default function Home() {
           </div>
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 text-black gap-8">
-              <div className="bg-gray-200 shadow-md p-8 rounded-md">
+              <div className="bg-gray-200 shadow-md p-8 m-20 rounded-md">
                 <img src="/spotify-youtube.png" alt="spotify youtuber converter image" className="w-full rounded-t-md" />
                 <h3 className="text-xl font-bold mt-4">Spotify to Youtube Converter</h3>
                 <p className="text-gray-700 mt-2">Seemlessly converts your Spotify playlist to a Youtube playlist. I created this program
@@ -47,20 +50,20 @@ export default function Home() {
                 </p>
                 <a href="#" className="text-blue-500 mt-4 inline-block hover:text-blue-700">View Project</a>
               </div>
-              <div className="bg-gray-200 shadow-md p-8 rounded-md">
+              <div className="bg-gray-200 shadow-md p-8 m-20 rounded-md">
                 <img src="/mortal-coil.png" alt="mortal coil image" className="w-full rounded-t-md" />
                 <h3 className="text-xl font-bold mt-4">Mortal Coil</h3>
                 <p className="text-gray-700 mt-2">I wrote a program in Python and C to solve Mortal Coil, a maze game where every square must be visited exactly once. I wrote search algorithms optimized with heuristics and pruning to solve as many levels as possible. 
                   At each level, the size of the maze becomes much larger, creating a need for search optimizations over a brute force strategy. </p>
                 <a href="#" className="text-blue-500 mt-4 inline-block hover:text-blue-700">View Project</a>
               </div>
-              <div className="bg-gray-200 shadow-md p-8 rounded-md">
+              <div className="bg-gray-200 shadow-md p-8 m-20 rounded-md">
                 {/*<img src="/" alt="Project 3" className="w-full rounded-t-md" />*/}
                 <h3 className="text-xl font-bold mt-4">Work In Progress</h3>
                 <p className="text-gray-700 mt-2">Project coming soon.</p>
                 <a href="#" className="text-blue-500 mt-4 inline-block hover:text-blue-700">View Project</a>
               </div>
-              <div className="bg-gray-200 shadow-md p-8 rounded-md">
+              <div className="bg-gray-200 shadow-md p-8 m-20 rounded-md">
                 {/*<img src="#" alt="Project 4" className="w-full rounded-t-md" />*/}
                 <h3 className="text-xl font-bold mt-4">Work In Progress</h3>
                 <p className="text-gray-700 mt-2">Project coming soon.</p>
